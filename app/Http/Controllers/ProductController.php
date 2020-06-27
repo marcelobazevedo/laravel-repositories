@@ -13,7 +13,7 @@ class ProductController extends Controller
         $this->request = $request;
         //$this->middleware('auth');
         //$this->middleware('auth')->only(['create', 'store']);
-        $this->middleware('auth')->except('index');
+       // $this->middleware('auth')->except('index');
     }
     /**
      * Display a listing of the resource.
@@ -33,7 +33,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.pages.products.create');
     }
 
     /**
@@ -66,7 +66,7 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('admin.pages.product.edit', compact('id'));
     }
 
     /**
