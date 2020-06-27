@@ -1,6 +1,6 @@
 @extends('admin.layouts.app')
 
-@section('title', 'editar produto')
+@section('title', 'editando produto produto')
 
 
 
