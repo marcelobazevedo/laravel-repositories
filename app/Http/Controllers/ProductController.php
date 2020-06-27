@@ -23,7 +23,7 @@ class ProductController extends Controller
     public function index()
     {
         $teste = '123';
-        return view('site.teste', compact('teste'));
+        return view('admin.pages.products.index', compact('teste'));
     }
 
     /**
